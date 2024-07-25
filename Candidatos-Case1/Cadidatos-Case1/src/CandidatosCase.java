@@ -5,8 +5,6 @@ import java.util.concurrent.ThreadLocalRandom;
 public class CandidatosCase {
     public static void main(String[] args) throws Exception {
 
-
-
         String CandidatosLista[] ={"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO","MÔNICA","FABRÍCIO","MIRELA","DANIELA","JORGE"};
 
         int CandidatosSelecionados = 0;
