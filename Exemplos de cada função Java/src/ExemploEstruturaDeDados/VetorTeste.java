@@ -17,5 +17,11 @@ public class VetorTeste {
     
         System.out.println(lista);
 
+        System.out.println(lista.contem(a1));
+
+        Aluno x = lista.pega(1);
+        System.out.println(x);
     }
+
+    
 }

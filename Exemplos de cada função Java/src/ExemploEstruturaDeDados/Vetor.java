@@ -11,18 +11,24 @@ public class Vetor {
     }
    
        public Aluno pega(int posicao) {
-           //recebe uma posição e devolve o aluno
-           return null;
-       }
+        if(!posicaoOcupada(posicao)) {
+        throw new IllegalArgumentException("posiçao invalida");
+        }
+        return alunos[posicao];
+    }
    
        public void remove(int posicao) {
            //remove pela posição
        }
    
        public boolean contem(Aluno aluno) {
-           //descobre se o aluno está ou não na lista
-           return false;
-       }
+        for(int i = 0; i < totalDeAlunos; i++) {
+            if(aluno.equals(alunos[i])) {
+                return true;
+            }
+        }
+        return false;
+    }
    
        public int tamanho() {
            //devolve a quantidade de alunos
@@ -34,4 +40,8 @@ public class Vetor {
            return Arrays.toString(alunos);
        }
    
+       private boolean posicaoOcupada(int posicao) {
+        return posicao >= 0 && posicao < totalDeAlunos;
+    }
+
    }
