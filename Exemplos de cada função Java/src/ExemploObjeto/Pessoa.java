@@ -6,6 +6,7 @@ public class Pessoa {
 
     private String nome;
     private int idade;
+    private String cpf;
     // Declaração dos atributos privados 'nome' (String) e 'idade' (int).
 
     public Pessoa(String nome, int idade) {
@@ -23,5 +24,13 @@ public class Pessoa {
     public int getIdade() {
         return idade;
         // Método público que retorna o valor do atributo 'idade'.
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 }
