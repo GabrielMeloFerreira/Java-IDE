@@ -1,7 +1,7 @@
 ### Segue abaixo o diagama de um iphone
 Nos arquivos se encontram também a utilização de cada um
 
-:::mermaid
+```mermaid
 
 classDiagram
 
@@ -27,4 +27,4 @@ Iphone --> Reprodutor Musical
 Iphone --> Aparelho Telefonico
 Iphone --> Navegador Internet
 
-:::
+```
